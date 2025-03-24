@@ -1,0 +1,56 @@
+{
+  "name": "ghostgpt-pro",
+  "version": "1.0.0",
+  "main": "electron.js",
+  "description": "A native ChatGPT desktop app for Linux with full local file parsing support.",
+  "author": {
+    "name": "SUDHARSAN17",
+    "email": "sudharsan6565@gmail.com"
+  },
+  "homepage": "https://github.com/sudharsan6565",
+  "scripts": {
+    "dev": "vite",
+    "build:web": "vite build",
+    "start:electron": "electron .",
+    "build:electron": "electron-builder"
+  },
+  "build": {
+    "appId": "com.ghostanon17.ghostgptpro",
+    "productName": "GhostGPT Pro",
+    "files": [
+      "dist/**/*",
+      "electron.js",
+      "build/icon.png"
+    ],
+    "directories": {
+      "buildResources": "build"
+    },
+    "linux": {
+      "target": "deb",
+      "icon": "build/icon.png",
+      "maintainer": "Sudharsan V <sudharsan6565@gmail.com>",
+      "category": "Utility"
+    }
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.15",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.21",
+    "electron": "^25.0.0",
+    "electron-builder": "^23.6.0",
+    "postcss": "^8.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^4.0.15",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "framer-motion": "^12.5.0",
+    "jszip": "^3.10.1",
+    "mammoth": "^1.9.0",
+    "papaparse": "^5.5.2",
+    "pdfjs-dist": "^5.0.375",
+    "tesseract.js": "^6.0.0",
+    "zustand": "^5.0.3"
+  }
+}

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=GhostGPT Pro
+Comment=Chat locally with GhostGPT
+Exec=/usr/lib/ghostgpt-pro/ghostgpt-pro
+Icon=/usr/lib/ghostgpt-pro/build/icon.png
+Terminal=false
+Type=Application
+Categories=Utility;Chat;AI;
+StartupWMClass=GhostGPT

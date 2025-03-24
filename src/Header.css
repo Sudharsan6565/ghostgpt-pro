@@ -1,0 +1,17 @@
+/* src/Header.css */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0px 900px;
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+.header-icon {
+  width: 120
+px;  /* increased from 40px */
+  height: 100px; /* increased from 40px */
+  margin-right: 0px;
+  border-radius: 15px; /* optional: gives the icon rounded corners */
+}
+
